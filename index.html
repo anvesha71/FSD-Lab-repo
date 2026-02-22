@@ -1,49 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Student Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <title>Anvesha Barate | Portfolio</title>
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header>
- <img src="images/profile.jpg" width="150" style="border-radius:50%;">
-<h1>Anvesha Barate</h1>
-<p>B.Tech Computer Science Student | Web Developer</p>
+    <div class="container nav">
+        <div class="logo">About<span>Me.</span></div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Service</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#experience">Resume</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<section class="about">
-<h2>About Me</h2>
-<p>Hello! I am a second year B.Tech Computer Science student at MIT-WPU, Pune. I am interested in web development, research, and financial literacy projects.</p>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+    <div class="container">
+        <p class="welcome">Hello, Welcome</p>
+        <h1>I’m Anvesha Barate</h1>
+
+        <p class="hero-text">
+            A passionate Computer Science Engineering (Core) student at MIT-WPU, Pune,
+            interested in research, financial literacy, and software development.
+            I enjoy building impactful web applications and working on real-world
+            problem-solving projects.
+        </p>
+
+        <a href="#contact"><button class="btn">Contact Me</button></a>
+    </div>
 </section>
 
-<section class="skills">
-<h2>Skills</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>Machine Learning</li>
-</ul>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+    <div class="container about-content">
+
+        <!-- IMAGE BOX -->
+        <div class="about-img">
+            <img src="images/profile.jpg" alt="Anvesha Barate">
+        </div>
+
+        <div>
+            <h2>About <span>Me</span></h2>
+
+            <p>
+                I am a B.Tech CSE (Core) student at MIT-WPU with a strong foundation in programming,
+                data structures, and software development. I am deeply interested in research,
+                financial literacy, and technology-driven solutions.
+            </p>
+
+            <p>
+                I am currently working on a Financial Literacy B2B platform for 8th standard students
+                that includes 2D animated videos, quizzes, and interactive games. I have also developed
+                a Smart Rainwater Harvesting Assessment System and a Quiz Portal Website.
+                My goal is to combine technology with education and finance to create meaningful impact.
+            </p>
+
+            <a href="#contact"><button class="btn">Contact Me</button></a>
+        </div>
+
+    </div>
 </section>
 
-<section class="projects">
-<h2>Projects</h2>
-<p>Financial Literacy Platform for School Students</p>
-<p>Quiz Portal Website</p>
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+    <div class="container">
+        <h2>My <span>Services</span></h2>
+
+        <div class="service-cards">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>
+                    I build responsive and user-friendly websites using HTML, CSS, and JavaScript.
+                    I focus on clean UI design and structured code.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Machine Learning</h3>
+                <p>
+                    I work with Python and ML algorithms such as KNN,
+                    Naive Bayes, and Decision Trees for classification problems.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Backend Development</h3>
+                <p>
+                    Experienced in Python and MySQL for developing
+                    database-driven applications and backend logic implementation.
+                </p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<section class="contact">
-<h2>Contact</h2>
-<p>Email: anveshabarate@gmail.com</p>
+<!-- ================= PORTFOLIO ================= -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <h2>My <span>Portfolio</span></h2>
+
+        <div class="portfolio-grid">
+
+            <div class="project-card">
+                <h3>Financial Literacy Platform</h3>
+                <p>
+                    A B2B web platform designed for schools in Pune to teach
+                    financial literacy to 8th standard students using 2D animations,
+                    quizzes, and interactive learning modules.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Smart Rainwater Harvesting Assessment System</h3>
+                <p>
+                    A web-based system developed to assess rooftop rainwater harvesting
+                    feasibility and promote sustainable water management.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Quiz Portal Website</h3>
+                <p>
+                    A web application that allows users to attempt quizzes with
+                    automated evaluation and structured scoring system.
+                </p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<footer>
-<p>© 2025 Student Portfolio</p>
+<!-- ================= EXPERIENCE ================= -->
+<section class="experience" id="experience">
+    <div class="container">
+        <h2>My <span>Experience</span></h2>
+
+        <div class="exp-cards">
+            <div class="exp-card">
+                <h3>Research & Development Enthusiast</h3>
+                <p>MIT-WPU, Pune</p>
+                <p>Actively exploring research opportunities in technology, financial systems, and machine learning.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+ <section class="contact" id="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Contact <span>Me</span>
+        </h2>
+
+        <div class="contact-content">
+
+            <div class="contact-info">
+                <p><strong>Address</strong> – Pune, Maharashtra</p>
+                <p><strong>Email</strong> – anveshabarate@gmail.com</p>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <textarea placeholder="Message"></textarea>
+                <button class="btn">Contact Me</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <h2 class="footer-title">
+            AboutMe<span>.</span>
+        </h2>
+
+        <p class="footer-subtitle">
+            Passionate about building impactful tech solutions and continuously learning modern technologies.
+        </p>
+
+        <div class="social-icons">
+
+    <!-- GitHub -->
+    <a href="https://github.com/anvesha71" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/anvesha-barate-5091672b2/" target="_blank" class="active">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+</div>
+
+    </div>
+
 </footer>
+
+<!-- SIMPLE NAVBAR TOGGLE -->
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
