@@ -1,33 +1,16 @@
-const display = document.getElementById("display");
-const buttons = document.querySelectorAll("button");
+function appendValue(value) {
+    document.getElementById("result").value += value;
+}
 
-let currentInput = "";
+function clearDisplay() {
+    document.getElementById("result").value = "";
+}
 
-buttons.forEach(button => {
-    button.addEventListener("click", () => {
-        const value = button.textContent;
-
-        if (value === "CE") {
-            currentInput = "";
-            display.value = "0";
-        } 
-        else if (value === "=") {
-            try {
-                let expression = currentInput
-                    .replace(/×/g, "*")
-                    .replace(/÷/g, "/");
-
-                let result = eval(expression);
-                display.value = result;
-                currentInput = result.toString();
-            } catch {
-                display.value = "Error";
-                currentInput = "";
-            }
-        } 
-        else {
-            currentInput += value;
-            display.value = currentInput;
-        }
-    });
-});
+function calculate() {
+    try {
+        document.getElementById("result").value =
+            eval(document.getElementById("result").value);
+    } catch {
+        alert("Invalid Expression");
+    }
+}
